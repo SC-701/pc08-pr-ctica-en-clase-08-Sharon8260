@@ -7,7 +7,7 @@
 		<PackageId>Autorizacion.DA.sgomez8260</PackageId>
 		<Authors>Sgomez8260</Authors>
 		<Description>Capa de acceso a datos del paquete de autorización. Consulta perfiles de usuario en la BD de seguridad con Dapper</Description>
-		<RepositoryUrl>https://github.com/SC-701/pc08-pr-ctica-en-clase-08-Sharon8260.git</RepositoryUrl>
+		<RepositoryUrl>https://github.com/Drojascode/SC701</RepositoryUrl>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 	</PropertyGroup>
 
