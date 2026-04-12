@@ -1,0 +1,73 @@
+﻿@page
+@model Web.Pages.Productos.DetalleModel
+@{
+}
+
+<h1>Detalle del Producto</h1>
+
+<div class="container">
+
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-body">
+
+                <h5 class="card-title">
+                    @Html.DisplayFor(model => model.producto.Nombre)
+                </h5>
+
+                <p class="card-text">
+
+                    <div>
+                        <b>
+                            @Html.DisplayNameFor(model => model.producto.Categoria):
+                            @Html.DisplayFor(model => model.producto.Categoria)
+                        </b>
+                    </div>
+
+                    <div>
+                        <b>
+                            @Html.DisplayNameFor(model => model.producto.SubCategoria):
+                            @Html.DisplayFor(model => model.producto.SubCategoria)
+                        </b>
+                    </div>
+
+                    <div>
+                        <b>
+                            @Html.DisplayNameFor(model => model.producto.Descripcion):
+                            @Html.DisplayFor(model => model.producto.Descripcion)
+                        </b>
+                    </div>
+
+                    <div>
+                        <b>
+                            @Html.DisplayNameFor(model => model.producto.Precio):
+                            @Html.DisplayFor(model => model.producto.Precio)
+                        </b>
+                    </div>
+
+                    <div>
+                        <b>
+                            @Html.DisplayNameFor(model => model.producto.Stock):
+                            @Html.DisplayFor(model => model.producto.Stock)
+                        </b>
+                    </div>
+
+                    <div>
+                        <b>
+                            @Html.DisplayNameFor(model => model.producto.CodigoBarras):
+                            @Html.DisplayFor(model => model.producto.CodigoBarras)
+                        </b>
+                    </div>
+
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+    <br />
+
+    <a class="btn btn-primary" asp-page="./Index">Volver</a>
+    <a class="btn btn-warning" asp-page="./Editar" asp-route-id="@Model.producto.Id">Editar</a>
+
+</div>

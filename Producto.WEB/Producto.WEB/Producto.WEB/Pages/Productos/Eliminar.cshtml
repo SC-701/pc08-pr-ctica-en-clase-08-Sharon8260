@@ -1,0 +1,68 @@
+﻿@page
+@model Web.Pages.Productos.EliminarModel
+@{
+}
+
+<h1>Eliminar Producto</h1>
+
+<div class="container">
+    <form method="post">
+
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-body">
+
+                    <h5 class="card-title">
+                        @Html.DisplayFor(model => model.producto.Nombre)
+                    </h5>
+
+                    <p class="card-text">
+
+                        <div>
+                            <b>
+                                @Html.DisplayNameFor(model => model.producto.Categoria):
+                                @Html.DisplayFor(model => model.producto.Categoria)
+                            </b>
+                        </div>
+
+                        <div>
+                            <b>
+                                @Html.DisplayNameFor(model => model.producto.SubCategoria):
+                                @Html.DisplayFor(model => model.producto.SubCategoria)
+                            </b>
+                        </div>
+
+                        <div>
+                            <b>
+                                @Html.DisplayNameFor(model => model.producto.Precio):
+                                @Html.DisplayFor(model => model.producto.Precio)
+                            </b>
+                        </div>
+
+                        <div>
+                            <b>
+                                @Html.DisplayNameFor(model => model.producto.Stock):
+                                @Html.DisplayFor(model => model.producto.Stock)
+                            </b>
+                        </div>
+
+                        <div>
+                            <b>
+                                @Html.DisplayNameFor(model => model.producto.CodigoBarras):
+                                @Html.DisplayFor(model => model.producto.CodigoBarras)
+                            </b>
+                        </div>
+
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+        <br />
+
+        <a type="button" class="btn btn-primary" asp-page="./Index">Volver</a>
+        <button type="submit" class="btn btn-danger">Eliminar</button>
+
+    </form>
+</div>

@@ -1,0 +1,9 @@
+﻿namespace Abstracciones.Modelos.Servicios.Revision
+{
+    public class Revision
+    {
+        public string Id { get; set; }
+        public string Nombre { get; set; }
+        public string CodigoBarras { get; set; }
+    }
+}
